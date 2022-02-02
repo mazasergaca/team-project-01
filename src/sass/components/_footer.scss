@@ -16,8 +16,7 @@ footer {
 }
 
 .footer-text__first {
-    font-family: Titan One;
-    font-style: normal;
+    font-family: "Titan One",sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: calc(21 / 18);
@@ -26,8 +25,7 @@ footer {
     color: #FFA5BA;
 }
 .footer-text__second {
-    font-family: Titan One;
-    font-style: normal;
+    font-family: "Titan One",sans-serif;
     font-weight: 500;
     font-size: 34px;
     line-height: calc(39 / 34);
@@ -70,15 +68,13 @@ footer {
         align-items: center;
     }
     &__icon {
-        fill: #ffffff;
+        fill: $main-white-color;
     }
 }
-.contacts {
+.footer-contacts {
     text-align: right;
 }
 .footer-tel{
-    font-family: DM Sans;
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: calc(22 /12);
@@ -89,18 +85,14 @@ footer {
         margin-bottom: 20px;
     }
     &__link{
-        font-family: DM Sans;
-        font-style: normal;
         font-weight: 700;
         font-size: 12px;
         line-height: calc(22 / 12);
         
-        color: #D41443;
+        color: $main-red-color;
         }
 }
-.last-text {
-    font-family: DM Sans;
-    font-style: normal;
+.footer-last-text {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(21 / 14);
