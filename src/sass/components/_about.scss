@@ -1,0 +1,75 @@
+.about-container {
+  @extend %adaptive-container;
+}
+
+.about {
+  background-color: #FFF5F6;
+  padding-top: 125px;
+}
+
+.about-pretitle {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFA5BA;
+
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about-title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #D41443;
+
+  margin-bottom: 26px;
+}
+
+.about-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+}
+
+.about-text-1 {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+
+    color: #000000;
+    margin-bottom: 47px;
+}
+
+.about-text-2 {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+
+    color: #907E82;
+    margin-bottom: 15px;
+}
+
+.about-text-3 {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+
+    color: #907E82;
+}
