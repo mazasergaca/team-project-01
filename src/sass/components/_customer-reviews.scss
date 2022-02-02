@@ -1,0 +1,36 @@
+.customer-reviews {
+  padding-top: 60px;
+  padding-bottom: 86px;
+
+  text-align: center;
+}
+.customer-reviews__wrap {
+  @extend %adaptive-container;
+}
+.customer-reviews__title {
+  @extend %visually-hidden;
+}
+.customer-reviews__image {
+  display: block;
+  margin-bottom: 29px;
+}
+.customer-reviews__review {
+  display: inline-block;
+  padding-top: 43px;
+  padding-right: 50px;
+  padding-bottom: 26px;
+  padding-left: 50px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  color: $main-black-color;
+}
+.customer-reviews__location {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  color: $main-black-color;
+}
