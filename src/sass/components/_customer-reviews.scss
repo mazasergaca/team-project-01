@@ -15,6 +15,8 @@
   margin-bottom: 29px;
 }
 .customer-reviews__review {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   padding-top: 43px;
   padding-right: 50px;
@@ -26,7 +28,21 @@
   font-size: 12px;
   line-height: 255%;
   color: $main-black-color;
+  background-color: #fafafa;
+  background-image: repeating-linear-gradients(to top, #ffffff 61%, #fff5f6 61%, #fff5f6);
 }
+.customer-reviews__review::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+  display: block;
+  background-image: url(../images/customer-reviews/quotes.svg);
+  width: 54px;
+  height: 40px;
+}
+
 .customer-reviews__location {
   margin: 0;
   font-weight: 500;
