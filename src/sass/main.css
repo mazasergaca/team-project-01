@@ -273,6 +273,14 @@ ul {
   width: 320px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-container {
+    padding-left: 36px;
+    padding-right: 76px;
+    width: 768px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -283,11 +291,34 @@ ul {
   background-color: #FFF5F6;
 }
 
-.advantages-wrap {
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.advantages-item {
   width: 230px;
 }
 
-.advantages-wrap:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: 180px;
+  }
+  .advantages-item + .advantages-item {
+    margin-left: 60px;
+  }
+}
+
+.advantages-item:not(:last-child) {
   padding-bottom: 38px;
 }
 
@@ -299,8 +330,14 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   color: #D41443;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-unit {
+    font-size: 48px;
+  }
 }
 
 .advantages-text {
@@ -310,6 +347,13 @@ ul {
   font-size: 12px;
   line-height: 1.70;
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-text {
+    font-size: 14px;
+    line-height: 1.74;
+  }
 }
 
 .advantages-unit-01::before {
@@ -323,6 +367,12 @@ ul {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-unit-01::before {
+    margin-bottom: 36px;
+  }
+}
+
 .advantages-unit-02::before {
   content: "";
   background-image: url(../images/advantages/advantages-icon2.png);
@@ -334,6 +384,12 @@ ul {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-unit-02::before {
+    margin-bottom: 36px;
+  }
+}
+
 .advantages-unit-03::before {
   content: "";
   background-image: url(../images/advantages/advantages-icon3.png);
@@ -343,5 +399,11 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-unit-03::before {
+    margin-bottom: 36px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
