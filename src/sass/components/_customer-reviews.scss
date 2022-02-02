@@ -1,9 +1,18 @@
 .customer-reviews {
-  padding-top: 60px;
-  padding-bottom: 86px;
-
+  padding-top: 80px;
+  padding-bottom: 170px;
   text-align: center;
+  color: #fff;
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 244px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 123px;
+    padding-bottom: 281px;
+  }
 }
+
 .customer-reviews__wrap {
   @extend %adaptive-container;
 }
@@ -13,30 +22,68 @@
 .customer-reviews__image {
   display: block;
   margin-bottom: 29px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
-.customer-reviews__review {
+.customer-reviews__backgroud-wrap {
   position: relative;
-  z-index: 1;
-  display: inline-block;
-  padding-top: 43px;
-  padding-right: 50px;
-  padding-bottom: 26px;
+  z-index: 0;
+  display: block;
+  margin: 0 auto;
   padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 52px;
+  background-color: #fafafa;
 
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    margin-bottom: 42px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    margin-bottom: 34px;
+  }
+}
+
+.customer-reviews__review {
+  display: inline-block;
+  padding-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 255%;
   color: $main-black-color;
-  background-color: #fafafa;
-  background-image: repeating-linear-gradients(to top, #ffffff 61%, #fff5f6 61%, #fff5f6);
+  background: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 30px,
+    #e1e1e1 31px,
+    #e1e1e1 32px
+  );
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 186%;
+  }
 }
 .customer-reviews__review::before {
   content: '';
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
-  transform: translate(50%, 50%);
+
+  opacity: 0.5;
+  transform: translate(50%, -25%);
   display: block;
   background-image: url(../images/customer-reviews/quotes.svg);
   width: 54px;
@@ -49,4 +96,10 @@
   font-size: 14px;
   line-height: 186%;
   color: $main-black-color;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
 }
