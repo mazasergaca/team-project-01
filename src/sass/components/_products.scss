@@ -1,0 +1,153 @@
+.products-conteiner {
+  @extend%adaptive-container;
+}
+
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+
+.products-label {
+  font-family: 'Titan One', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products-title {
+  font-family: 'Titan One', sans-serif;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 144px;
+
+  color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 259px;
+  }
+}
+
+.products-ice-cream {
+  padding: 161px 39px 41px 41px;
+  border-radius: 24px;
+  background: #ffb8ca;
+}
+
+.products-ice-coffee {
+  padding: 161px 39px 41px 41px;
+  border-radius: 24px;
+  background: #f0d1a5;
+}
+
+.products-milkshakes {
+  padding: 161px 39px 41px 41px;
+  border-radius: 24px;
+  background: #c2e297;
+}
+
+.products-list-item:not(:last-child) {
+  margin-bottom: 130px;
+}
+
+.products-list-title {
+  font-family: 'Titan One', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 32px;
+  }
+}
+
+.products-list-text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    margin-bottom: 62px;
+  }
+}
+
+.products-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-list-item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 10px) / 3);
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 6 * 15px) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
