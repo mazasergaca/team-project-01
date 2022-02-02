@@ -66,6 +66,13 @@ ul {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -77,6 +84,13 @@ ul {
   background-image: url(../images/about/about-bg-mob-1x.png);
   background-repeat: no-repeat;
   background-position: bottom 60px center;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 130px;
+    background-image: none;
+  }
 }
 
 .about-pretitle {
@@ -92,6 +106,14 @@ ul {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-pretitle {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+}
+
 .about-title {
   font-family: Titan One;
   font-style: normal;
@@ -105,6 +127,21 @@ ul {
   margin-bottom: 26px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .about-img {
   display: block;
   margin-left: auto;
@@ -112,10 +149,26 @@ ul {
   margin-bottom: 46px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-img {
+    margin: 0;
+  }
+}
+
 .about-text-container {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 220px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-text-container {
+    margin-top: 50px;
+    margin-left: 17px;
+    margin-right: 0;
+    min-width: 340px;
+  }
 }
 
 .about-text-1 {
@@ -127,6 +180,14 @@ ul {
   margin-bottom: 47px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-text-1 {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-bottom: 34px;
+  }
+}
+
 .about-text-2 {
   font-family: DM Sans;
   font-weight: 500;
@@ -136,6 +197,14 @@ ul {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-text-2 {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-bottom: 25px;
+  }
+}
+
 .about-text-3 {
   font-family: DM Sans;
   font-weight: 500;
@@ -143,6 +212,14 @@ ul {
   line-height: 1.62;
   margin-bottom: 30px;
   color: #907E82;
+}
+
+@media screen and (min-width: 768px) {
+  .about-text-3 {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-bottom: 62px;
+  }
 }
 
 .about-readmore-btn {
@@ -175,6 +252,15 @@ ul {
 
 .about-readmore-btn:hover, .about-readmore-btn:focus {
   background: #ECEBEB;
+}
+
+@media screen and (min-width: 768px) {
+  .about-readmore-btn {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-bottom: 66px;
+    margin-left: 0;
+  }
 }
 
 .about-readmore-svg {

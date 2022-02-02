@@ -2,6 +2,10 @@
   @extend %adaptive-container;
   padding-left: 20px;
   padding-right: 20px;
+  @media screen and (min-width: 768px) {
+      padding-left: 36px;
+      padding-right: 36px;
+  }
 }
 
 * {
@@ -14,6 +18,10 @@
   background-image: url(../images/about/about-bg-mob-1x.png);
   background-repeat: no-repeat;
   background-position: bottom 60px center;
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    background-image: none;
+  }
 }
 
 .about-pretitle {
@@ -22,7 +30,6 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 1.16;
-
   text-align: center;
   text-transform: uppercase;
 
@@ -30,6 +37,11 @@
 
   margin-top: 0;
   margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+        margin-bottom: 16px;
+    }
 }
 
 .about-title {
@@ -45,6 +57,16 @@
   color: #D41443;
 
   margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+}
+
+.about-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .about-img {
@@ -52,13 +74,22 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 46px;
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
 }
 
 .about-text-container {
-    
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 220px;
+    @media screen and (min-width: 768px) {
+      margin-top: 50px;
+      margin-left: 17px;
+      margin-right: 0;
+      min-width: 340px;
+    }
 }
 
 .about-text-1 {
@@ -68,6 +99,11 @@
     line-height: 1.62;
     color: #000000;
     margin-bottom: 47px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.76;
+        margin-bottom: 34px;
+    }
 }
 
 .about-text-2 {
@@ -78,6 +114,11 @@
 
     color: #907E82;
     margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.76;
+      margin-bottom: 25px;
+    }
 }
 
 .about-text-3 {
@@ -88,6 +129,11 @@
     margin-bottom: 30px;
 
     color: #907E82;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.76;
+      margin-bottom: 62px;
+    }
 }
 
 .about-readmore-btn {
@@ -117,6 +163,12 @@
     &:hover,
     &:focus {
       background: #ECEBEB;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.31;
+      margin-bottom: 66px;
+      margin-left: 0;
     }
 }
 
