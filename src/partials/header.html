@@ -1,22 +1,57 @@
 <header class="header">
     <div class="header-container">
-        <a href="#" class="header-logo">
+        <a href="./index.html" class="header-logo">
             <img src="./images/hero-header/logo.png" alt="logo">
         </a>
-        <button type="button" class="header-menu-button" aria-expanded="true" aria-controls="menu-container"
-            data-menu-button>
-            <svg width="20" height="12" aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="/images/hero-header/header-icons.svg#icon-header-burger-menu"></use>
-                <!-- <use class="icon-cross" href="/images/hero-header/header-icons.svg#icon-header-cross-menu"></use> -->
-            </svg>
+        <button type="button" class="menu-open-btn">
+                <svg class="open-menu-icon" width="24" height="16">
+                    <use href="/images/hero-header/header-icons.svg#icon-header-burger-menu"></use>
+                </svg>
+        </button>    
+        <div class="header-backdrop is-hidden">
+            <div class="header-menu">
+                <div class="header-menu-wrapper">
+                    <button type="button" class="menu-close-btn">
+                        <svg class="close-menu-icon" width="14" height="14">
+                            <use href="/images/hero-header/header-icons.svg#icon-header-cross-menu"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="header-button-buy" data-modal-open>Buy now
+                        <img src="./images/about/about-btn-svg.svg" class="header-buynow-svg" alt="">     
+                    </button>
+                    <nav class="header-menu-nav">
+                        <ul class="header-menu-nav-list">
+                            <li class="header-menu-nav-item">
+                                <a href="./index.html" class="header-menu-nav-link">Home</a>
+                            </li>
+                            <li class="header-menu-nav-item">
+                                <a href="#customer-reviews" class="header-menu-nav-link">About us</a>
+                            </li>
+                            <li class="header-menu-nav-item">
+                                <a href="#about" class="header-menu-nav-link">How it’s made?</a>
+                            </li>
+                            <li class="header-menu-nav-item">
+                                <a href="#products" class="header-menu-nav-link">Our products</a>
+                            </li>
+                            <li class="header-menu-nav-item">
+                                <a href="#contacts" class="header-menu-nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <nav class="header-navigation">
+            <ul class="header-nav-list">
+                <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Home</a></li>
+                <li class="header-nav__item"><a href="#customer-reviews" class="header-nav__link">About us</a></li>
+                <li class="header-nav__item"><a href="#about" class="header-nav__link">How it’s made?</a></li>
+                <li class="header-nav__item"><a href="#products" class="header-nav__link">Our products</a></li>
+                <li class="header-nav__item"><a href="#contacts" class="header-nav__link">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="header-button header-button-buy" data-modal-open>Buy now
+            <img src="./images/about/about-btn-svg.svg" class="header-buynow-svg" alt="">
         </button>
-        <ul class="header-nav">
-            <li class="header-nav__list"><a href="" class="header-nav__link">Home</a></li>
-            <li class="header-nav__list"><a href="" class="header-nav__link">About us</a></li>
-            <li class="header-nav__list"><a href="" class="header-nav__link">How it’s made?</a></li>
-            <li class="header-nav__list"><a href="" class="header-nav__link">Our products</a></li>
-            <li class="header-nav__list"><a href="" class="header-nav__link">Contact</a></li>
-        </ul>
-        <button type="button" class="header-button" data-modal-open>Buy now</button>
     </div>
 </header>

@@ -1,84 +1,213 @@
-.header {
-  background: #ffb8ca;
-}
-
 .header-container {
-  position: relative;
   @extend %adaptive-container;
+  position: relative;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 6px 20px 0;
+}
 
-  @media screen and (min-width: 768px) {
-    padding: 38px 34px 0;
-  }
-  @media screen and (min-width: 1280px) {
-    padding: 6px 20px 0;
-  }
+.header {
+  background: #ffb8ca;
+  padding-top: 37px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  // margin-right: 110px;
 }
 
 .header-logo img {
   display: block;
 }
 
-.header-button {
-  @media screen and (max-width: 767px) {
-    display: none;
+.header-navigation {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
   }
+}
 
-  width: 160px;
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__item+.header-nav__item {
+  margin-left: 20px;
+}
+
+.header-nav__link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #FFFFFF;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #D41443;
+  }
+}
+
+.header-button {
+  display: none;
+  // margin-left: 110px;
+  text-align: center;
+  width: 159px;
   height: 44px;
+  
+  background: #FFFFFF;
+  border-radius: 22px;
+  border: #FFFFFF;
 
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.31;
+  
+  color: #D41443;
 
-  background: #ffffff;
-  border-radius: 20px;
-
-  color: #d41443;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+
   &:hover,
   &:focus {
-    background: #ecebeb;
+    background: #ECEBEB;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
+.header-buynow-svg {
+    margin-left: 12px;
+  }
+
+  .menu-open-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+    fill: black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: black;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  .open-menu-icon {
+    fill: currentColor;
+    &:hover,
+    &:focus {
+      color: black;
+    }
+  }
+
+.header-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 94px 15px;
+
+  opacity: 1;
+  overflow-y: scroll;
+  z-index: 5;
+
+  background-color: rgba(255, 184, 202, 0.5);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header-menu {
+  width: 250px;
+  height: 100vh;
+  padding: 60px 21px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #e17992;
   @media screen and (min-width: 1280px) {
+    width: 254px;
+    padding: 60px 24px;
   }
 }
 
-.header-nav {
-  display: flex;
-  @media screen and (max-width: 1279px) {
-    display: none;
-  }
-}
-
-.header-menu-button {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  right: 25px;
-  transform: translate(-50%, -50%);
-
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
+.menu-close-btn {
   background-color: transparent;
-
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 70%;
-    right: 30%;
-  }
-  @media screen and (min-width: 1280px) {
-  }
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 28px;
+  top: 23px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+ 
 }
+
+  .header-button-buy {
+     display: block;
+     margin-bottom: 32px;  
+     width: 209px;
+     height: 44px;
+     text-align: center;
+
+     background: #FFFFFF;
+     border-radius: 22px;
+     border: #FFFFFF;
+
+     font-family: DM Sans;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.31;
+
+     color: #D41443;
+
+     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     cursor: pointer;
+     &:hover,
+     &:focus {
+       background: #ECEBEB;
+     }   
+  }
+
+  .header-menu-nav-item {
+    margin-bottom: 23px;   
+  }
+
+  .header-menu-nav-link {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.13;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: #D41443;
+    }
+  }
+
+
+
+
