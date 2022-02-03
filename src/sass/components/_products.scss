@@ -287,6 +287,11 @@
   border: none;
   cursor: pointer;
   background-color: #fff;
+
+  &:hover,
+  &:focus {
+    background: rgba(236, 235, 235, 1);
+  }
 }
 
 .button-icon-arrow {
