@@ -1,0 +1,183 @@
+.list {
+  list-style: none;
+}
+
+.contacts-title {
+  @extend %visually-hidden;
+}
+
+.contacts-section {
+  background-color: #fff5f6;
+  background-position: 0 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: linear-gradient(to bottom, #ffffff 5%, #ffffff 0, #fff5f6 0, #fff5f6 0);
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 13%,
+      #ffffff 13%,
+      #fff5f6 13%,
+      #fff5f6 13%
+    );
+  }
+  @media screen and(min-width:1280px) {
+    // background-image: url('./images/contacts/bg-contacts-1280-min.png'),
+    //   linear-gradient(to bottom, #ffffff 15%, #ffffff 15%, #fff5f6 15%, #fff5f6 15%);
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      //   background-image: url('./images/contacts/bg-contacts-1280@2x-min.png'),
+      // linear-gradient(to bottom, #ffffff 15%, #ffffff 15%, #fff5f6 15%, #fff5f6 15%);
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 54px;
+
+  @media screen and(min-width:768px) {
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 81px;
+  }
+  @media screen and(min-width: 1280px) {
+    height: 100%;
+    margin-bottom: 86px;
+  }
+}
+
+.contacts-item {
+  width: 220px;
+  background-color: $main-white-color;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @media screen and(max-width: 1279px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and(min-width: 768px) {
+      flex-basis: calc(100% / 3 - 20px);
+      margin: 10px;
+    }
+  }
+  @media screen and(min-width:1280px) {
+    width: 330px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
+}
+
+.contacts-box {
+  padding: 43px 21px 43px 20px;
+  @media screen and(min-width: 768px) {
+    padding: 50px 31px 50px 32px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding: 51px 43px 62px 44px;
+  }
+}
+
+.contacts-item__title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $main-white-color;
+  text-align: center;
+  background-color: #f0d1a5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 80px;
+  height: 16px;
+  @media screen and(min-width: 768px) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $main-white-color;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    width: 73px;
+    height: 28px;
+  }
+}
+
+.contacts-item_name-box {
+  padding-bottom: 25px;
+  @media screen and(min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding-bottom: 32px;
+  }
+}
+
+.contacts-item__title_green {
+  background-color: #c2e297;
+  width: 130px;
+  height: 16px;
+  @media screen and(min-width: 768px) {
+    width: 138px;
+    height: 28px;
+  }
+}
+
+.contacts-item__city {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $main-black-color;
+  margin-bottom: 10px;
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    border-color: $main-black-color;
+    margin-bottom: 14px;
+  }
+  @media screen and(min-width: 1280px) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $main-black-color;
+    margin-bottom: 10px;
+  }
+}
+
+.contacts-item__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  // letter-spacing:;
+  color: #907e82;
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.66;
+    // letter-spacing:;
+    color: #907e82;
+  }
+  @media screen and(min-width: 1280px) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.83;
+    // letter-spacing:;
+    color: #907e82;
+  }
+}
