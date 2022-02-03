@@ -9,7 +9,7 @@
     refs.closeModal2Btn.addEventListener('click', toggleModal2);
   
     function toggleModal2() {
-      document.body.classList.toggle("modal2-open");
+      document.body.classList.toggle("modal-open");
       refs.modal2.classList.toggle('is-hidden');
     }
   })();

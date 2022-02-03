@@ -26,11 +26,11 @@
   margin-right: auto;
   transform: scale(1);
   max-width: 460px;
-  height: 509px;
+  height: 500px;
 
   padding: 30px 30px 15px 30px;
 
-  background-color: #79a9e1;
+  background-color: #e17992;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -39,7 +39,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -124,6 +123,10 @@
     color: #000000;
 
     margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+        font-size: 14px;
+        font-weight: 700;
+    }
 }
 
 .modal2-text2 {
@@ -136,6 +139,9 @@
     color: #FFFFFF;
 
     margin-bottom: 15px;
+    @media screen and (min-width: 480px) {
+      font-size: 14px;
+    }
 }
 
 .modal2-text3 {
@@ -146,144 +152,9 @@
   text-align: center;
 
   color: #FFFFFF;
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+  }
 }
 
-.modal2-text-container {
 
-}
-
-// .form__title {
-//   font-family: Titan One;
-//   margin-bottom: 12px;
-//   text-align: center;
-//   font-size: 24px;
-//   letter-spacing: 0.04em;
-//   line-height: 1.5;
-//   color: $main-red-color;
-
-//   @media screen and (min-width: 1200px) {
-//     line-height: 1.2;
-//   }
-// }
-
-// .form__field {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   margin-bottom: 25px;
-//   &:nth-child(4) {
-//     margin-bottom: 30px;
-//   }
-// }
-
-// .form__label {
-//   position: absolute;
-//   top: 13px;
-//   left: 0;
-//   transform: translateY(0);
-//   padding-left: 16px;
-//   font-size: 14px;
-//   line-height: 1.2;
-//   letter-spacing: 0.01em;
-//   z-index: 2;
-
-//   color: $main-red-color;
-
-//   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .form__input {
-//   width: 100%;
-//   padding: 11px 16px;
-//   color: $main-red-color;
-//   border-radius: 8px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-
-//   &:focus {
-//     border-color: $main-red-color;
-//     outline: none;
-//   }
-//   &:not(:placeholder-shown) + .form__label {
-//     transform: translateY(-200%);
-//     color: $main-white-color;
-//   }
-// }
-
-// .form__icon {
-//   position: absolute;
-//   top: 50%;
-//   left: 12px;
-//   transform: translateY(-50%);
-
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   fill: $main-black-color;
-
-//   .form__input:focus + & {
-//     fill: $main-red-color;
-//   }
-// }
-
-// .form__container {
-//   position: relative;
-// }
-// .form__textarea {
-//   padding: 12px 16px;
-//   height: 120px;
-//   color: $main-red-color;
-
-//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   border-radius: 8px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   resize: none;
-
-//   &:focus {
-//     border-color: $main-red-color;
-//     outline: none;
-//   }
-//   &:not(:placeholder-shown) + .form__label {
-//     transform: translateY(-200%);
-//     color: $main-white-color;
-//   }
-// }
-
-// .form__button {
-//   display: flex;
-//   align-items: center;
-//   margin-right: auto;
-//   margin-left: auto;
-//   padding: 10px 15px;
-
-//   font-family: 'DM Sans', sans-serif;
-//   text-transform: uppercase;
-//   font-size: 14px;
-//   line-height: 1.87;
-//   letter-spacing: 0.06em;
-
-//   cursor: pointer;
-//   border: none;
-//   border-radius: 8px;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   color: $main-white-color;
-//   background-color: $main-red-color;
-
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     background-color: $main-white-color;
-//     color: $main-red-color;
-//   }
-// }
-
-// .modal__button-text {
-//   margin-right: 5px;
-// }
-
-// .modal__button-icon {
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   .form__button:hover & {
-//     transform: rotateZ(360deg);
-//   }
-// }
