@@ -2,10 +2,10 @@ footer {
     background-color: #FFF5F6;
     width: 100vw;
     height: 100vh;
-    @extend %adaptive-container;
 }
 .footer-page {
     margin: 0 auto;
+    @extend %adaptive-container;
     
     @media screen and (min-width:768px) {
         flex-wrap: wrap;
