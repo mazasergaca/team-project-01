@@ -46,11 +46,6 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 528px;
-    width: 100%;
-  }
 }
 
 .backdrop.is-hidden .modal {
@@ -103,7 +98,7 @@
   line-height: 1.5;
   color: $main-red-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     line-height: 1.2;
   }
 }
@@ -209,13 +204,11 @@
   color: $main-white-color;
   background-color: $main-red-color;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background-color: $main-white-color;
-    color: $main-red-color;
+    background-color: #c7133e;
   }
 }
 
