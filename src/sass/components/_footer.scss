@@ -90,6 +90,10 @@ footer {
 
     margin-bottom: 45px;
 
+    @media screen and (min-width:1280px) {
+        margin-bottom: 50px;
+    }
+
     &__item {
         margin-right: 29px;
 
