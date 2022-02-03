@@ -2,8 +2,8 @@
     <div class="hero-container">
         <h1 class="hero__title">ice cream <br> made with<br><span class="hero__title--mod">passion</span></h1>
         <ul class="hero-list">
-            <li class="hero-list__item"><a href="" class="hero-list__link hero__btn--first">Products</a></li>
-            <li class="hero-list__item"><a href="" class="hero-list__link hero__btn--second">How it’s made?</a></li>
+            <li class="hero-list__item"><a href="" class="hero__btn--first">Products</a></li>
+            <li class="hero-list__item"><a href="" class="hero__btn--second">How it’s made?</a></li>
         </ul>
         <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et</p>
@@ -11,5 +11,14 @@
             <li class="hero-achievements__item"><span class="hero-achievements__item--mod">16</span>cafes</li>
             <li class="hero-achievements__item"><span class="hero-achievements__item--mod">23</span>food trucks</li>
         </ul>
+        <picture>
+            <source media="(min-width: 1280px)"
+                srcset="./images/hero-header/hero-image-desktop.png 1x, ./images/hero-header/hero-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+                srcset="./images/hero-header/hero-image-tablet.png 1x, ./images/hero-header/hero-image-tablet@2x.png 2x">
+            <source media="(min-width: 320px)"
+                srcset="./images/hero-header/hero-image-mobile.png 1x, ./images/hero-header/hero-image-mobile@2x.png 2x">
+            <img class="hero-image-main" src="./images/hero-header/hero-image-mobile.png" alt="ice cream cone">
+        </picture>
     </div>
 </section>

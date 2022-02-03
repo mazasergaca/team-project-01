@@ -143,29 +143,19 @@
     font-size: 20px;
   }
 }
-.slider-home-list {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-bottom: 18px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 14px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 15px;
-  }
-}
-.slider-home-item {
-  display: block;
+
+.swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   border: 1px solid transparent;
   border-radius: 50%;
   background-color: #d9d9d9;
 }
-.slider-home-item:first-child {
+.swiper-pagination-bullet-active {
+  width: 13px;
+  height: 13px;
   background-color: transparent;
-}
-.slider-home-item + .slider-home-item {
-  margin-left: 18px;
+  border-radius: 0%;
+  background-image: url(../images/customer-reviews/icon-home.svg);
+  background-repeat: no-repeat;
 }
