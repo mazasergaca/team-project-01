@@ -152,10 +152,9 @@
   background-color: #d9d9d9;
 }
 .swiper-pagination-bullet-active {
-  width: 13px;
-  height: 13px;
   background-color: transparent;
   border-radius: 0%;
   background-image: url(../images/customer-reviews/icon-home.svg);
+  background-size: contain;
   background-repeat: no-repeat;
 }
