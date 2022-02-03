@@ -11,7 +11,7 @@
     padding: 94px 34px 34px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 156px 94px 56px 115px;
+    padding: 156px 97px 56px 115px;
   }
 }
 .hero-picture__secondary--left,
@@ -28,8 +28,10 @@
 
 .hero__title {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
   color: #ffffff;
   font-size: 22px;
   line-height: 25px;
@@ -37,11 +39,20 @@
   text-transform: uppercase;
   margin-bottom: 19px;
 
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
   &--mod {
     font-size: 34px;
     line-height: 90.5%;
     letter-spacing: 0.04em;
     color: #d41443;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -73,6 +84,7 @@
   color: #ffffff;
 
   z-index: 1;
+
   &--mod {
     font-family: Titan One;
     font-size: 28px;
@@ -81,6 +93,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: 53px;
+    }
   }
 
   &::before {
@@ -95,11 +112,20 @@
     border-radius: 50%;
     z-index: -1;
   }
+
+  &:first-child {
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1280px) {
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .hero-list {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   display: flex;
   margin-bottom: 66px;
@@ -139,6 +165,10 @@
     font-size: 8px;
     line-height: 150%;
     color: #ffffff;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -235,11 +265,13 @@
   top: 100%;
   right: 32px;
   transform: translateY(-100%);
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     right: 247px;
   }
   @media screen and (min-width: 1280px) {
+    right: 450px;
   }
 }
 
@@ -250,8 +282,10 @@
     position: absolute;
     right: 34px;
     transform: translateY(-75%);
+    z-index: 1;
   }
   @media screen and (min-width: 1280px) {
+    right: 109px;
   }
 }
 
@@ -264,5 +298,30 @@
     bottom: 28px;
   }
   @media screen and (min-width: 1280px) {
+    left: 77px;
+    bottom: 45px;
+  }
+}
+
+.hero-tablet-ellipse {
+  display: block;
+  width: 346px;
+  height: 344px;
+  position: absolute;
+  top: 23%;
+  right: -65px;
+  z-index: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    top: 4%;
+    right: 17%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    top: -4%;
+    right: 21%;
   }
 }
