@@ -1,10 +1,18 @@
 .gallery {
   background-image: linear-gradient(to top, #ffffff 61%, #fff5f6 61%, #fff5f6);
 }
-.gallery__wrap {
-  @extend %adaptive-container;
-}
+// .gallery__wrap {
+//   @extend %adaptive-container;
+// }
 .gallery__image {
   display: block;
-  width: 100%;
+  min-width: 100%;
+  width: 364px;
+
+  @media screen and (min-width: 768px) {
+    width: 786px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 }

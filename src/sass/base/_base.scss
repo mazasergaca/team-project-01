@@ -2,6 +2,10 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   letter-spacing: 0.04em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 a {
   text-decoration: none;
