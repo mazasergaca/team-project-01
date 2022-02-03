@@ -8,6 +8,13 @@
   display: flex;
   justify-content: space-between;
   padding: 6px 20px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 38px 34px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 6px 20px 0;
+  }
 }
 
 .header-logo img {
@@ -17,6 +24,33 @@
 .header-button {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  width: 160px;
+  height: 44px;
+
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  color: #d41443;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+
+  @media screen and (min-width: 1280px) {
   }
 }
 
@@ -31,7 +65,7 @@
   position: absolute;
   z-index: 2;
   top: 50%;
-  right: 0;
+  right: 25px;
   transform: translate(-50%, -50%);
 
   display: inline-flex;
@@ -39,4 +73,12 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 70%;
+    right: 30%;
+  }
+  @media screen and (min-width: 1280px) {
+  }
 }
