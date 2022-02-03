@@ -67,6 +67,14 @@
   background: #ffb8ca;
   position: relative;
 
+  @media screen and (min-width: 768px) {
+    padding: 161px 11px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px;
+  }
+
   &::before {
     content: ' ';
     background-image: url(../images/produkct-images/ice-cream.png);
@@ -90,8 +98,6 @@
       transform: translate(-50%, -50%);
       margin: 0 auto;
 
-      // top: -102px;
-      // left: -1px;
       width: 220px;
       height: 226px;
     }
@@ -112,6 +118,14 @@
   border-radius: 24px;
   background: #f0d1a5;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 161px 11px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px;
+  }
 
   &::before {
     content: ' ';
@@ -156,6 +170,14 @@
   border-radius: 24px;
   background: #c2e297;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 161px 11px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px;
+  }
 
   &::before {
     content: ' ';
@@ -245,9 +267,6 @@
   color: #ffffff;
 
   margin-bottom: 30px;
-
-  // width: 200px;
-  // height: 124px;
 
   @media screen and (min-width: 768px) {
     line-height: 1.76;
