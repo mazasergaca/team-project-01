@@ -34,6 +34,10 @@
   }
 }
 
+.contacts-container {
+  @extend %adaptive-container;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -43,7 +47,6 @@
   @media screen and(min-width:768px) {
     align-items: baseline;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 81px;
   }
@@ -181,3 +184,49 @@
     color: #907e82;
   }
 }
+
+.contacts-timetable {
+  padding: 25px 0;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  @media screen and(min-width: 768px) {
+    padding: 30px 0;
+  }
+  @media screen and(min-width: 1280px) {
+    padding: 32px 0;
+  }
+}
+
+.contacts-timetable__days {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.66;
+  color: $main-black-color;
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $main-black-color;
+  }
+  @media screen and(min-width: 1280px) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $main-black-color;
+  }
+}
+
+// .contacts-timetable__time {
+//   font-size: 12px;
+//   font-weight: 500;
+//   line-height: 1.86;
+//   color: #ffa5ba;
+//   @media screen and(min-width: 768px) {
+//     @include font(DM Sans, 14px, 500, 1.86, null, $light-accent-color);
+//   }
+//   @media screen and(min-width: 1280px) {
+//     @include font(DM Sans, 16px, 500, 1.86, null, $light-accent-color);
+//   }
+// }
