@@ -288,9 +288,13 @@
   cursor: pointer;
   background-color: #fff;
 
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
-    background: rgba(236, 235, 235, 1);
+    background-color: rgba(236, 235, 235, 1);
   }
 }
 
