@@ -1,14 +1,23 @@
 <section class="gallery">
   <div class="gallery__wrap">
-    <caption>
+    <picture>
       <source
-        srcset="./images/gallery/gallery-pic1-1x.jpg 1x, ./images/gallery/gallery-pic1-2x.jpg 2x"
+        srcset="./images/gallery/gallery-desc-1x.jpg 1x, ./images/gallery/gallery-desc-2x.jpg 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/gallery/gallery-tab-1x.jpg 1x, ./images/gallery/gallery-tab-2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/gallery/gallery-mob-1x.jpg 1x, ./images/gallery/gallery-mob-2x.jpg 2x"
+        media="(min-width: 320px)"
       />
       <img
         class="gallery__image"
-        src="./images/gallery/gallery-pic1-1x.jpg"
+        src="./images/gallery/gallery-desc-1x.jpg"
         alt="несколько изображений с мороженным"
       />
-    </caption>
+    </picture>
   </div>
 </section>
