@@ -1,0 +1,73 @@
+.hero {
+  background: #ffb8ca;
+}
+
+.hero-container {
+  @extend %adaptive-container;
+
+  //   position: relative;
+
+  //   background-size: cover;
+
+  padding-bottom: 160px;
+  background-repeat: no-repeat;
+  background-position: 75% 100%;
+  background-size: 171px 410px;
+  background-image: url(../images/hero-header/hero-image-mobile.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/hero-header/hero-image-mobile@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero-header/hero-image-tablet.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero-header/hero-image-tablet@2x.png);
+    }
+  }
+}
+
+.hero-container img {
+  display: block;
+}
+
+.hero-picture__main {
+  //   display: block;
+  outline: 3px solid red;
+}
+
+.hero-picture__secondary--left,
+.hero-picture__secondary--right {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__title {
+  padding-top: 193px;
+  font-family: Titan One;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &--mod {
+    font-size: 48px;
+    line-height: 96.5%;
+    color: #d41443;
+  }
+}
+
+.hero__text {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-achievements {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
