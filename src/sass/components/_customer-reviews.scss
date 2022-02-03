@@ -107,6 +107,27 @@
     padding: 0 4px;
   }
 }
+.slider-point-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+.slider-point-item {
+  width: 4px;
+  height: 4px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #c7133e;
+}
+.slider-point-item + .slider-point-item {
+  margin-left: 10px;
+}
 .customer-reviews__location {
   margin: 0;
   font-weight: 500;
