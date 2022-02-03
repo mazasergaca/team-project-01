@@ -67,6 +67,14 @@
   background: #ffb8ca;
   position: relative;
 
+  @media screen and (min-width: 768px) {
+    padding: 161px 11px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px;
+  }
+
   &::before {
     content: ' ';
     background-image: url(../images/produkct-images/ice-cream.png);
@@ -90,8 +98,6 @@
       transform: translate(-50%, -50%);
       margin: 0 auto;
 
-      // top: -102px;
-      // left: -1px;
       width: 220px;
       height: 226px;
     }
@@ -112,6 +118,14 @@
   border-radius: 24px;
   background: #f0d1a5;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 161px 11px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px;
+  }
 
   &::before {
     content: ' ';
@@ -157,6 +171,14 @@
   background: #c2e297;
   position: relative;
 
+  @media screen and (min-width: 768px) {
+    padding: 161px 11px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px;
+  }
+
   &::before {
     content: ' ';
     background-image: url(../images/produkct-images/milkshakes.png);
@@ -193,10 +215,6 @@
       height: 335px;
     }
   }
-}
-
-.products-list-item:not(:last-child) {
-  margin-bottom: 130px;
 }
 
 .products-list-title {
@@ -259,8 +277,29 @@
 }
 
 .products-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(236, 235, 235, 1);
+  }
+}
+
+.button-icon-arrow {
+  fill: #d41443;
 }
 
 .products-list {
@@ -269,6 +308,12 @@
 }
 
 .products-list-item {
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 6 * 10px) / 3);
     &:not(:last-child) {
