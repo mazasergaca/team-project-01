@@ -162,24 +162,74 @@
 .hero-bottom {
   display: flex;
   flex-direction: column;
-  margin-left: 120px;
+  margin-left: 130px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 190px;
+  }
+}
+.hero-bottom__arrow {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 18px;
+  // height: 18px;
+  // margin: 0;
+  // padding: 0;
+  // border-radius: 50%;
+  // border: none;
+  // cursor: pointer;
+  // background-color: #ffffff;
+  // transition-property: background-color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // &:hover,
+  // &:focus {
+  //   background: #ecebeb;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   width: 26px;
+  //   height: 26px;
+
+  //   &:hover,
+  //   &:focus {
+  //     background: #ecebeb;
+  //   }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(236, 235, 235, 1);
+  }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 180px;
+    width: 26px;
+    height: 26px;
   }
-  &__arrow {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-    display: block;
-    width: 18px;
-    height: 18px;
+}
 
-    @media screen and (min-width: 1280px) {
-      width: 26px;
-      height: 26px;
-    }
-  }
+.hero-icon-arrow {
+  fill: #d41443;
+  width: 15px;
+  height: 15px;
 }
 
 .hero__text {
@@ -189,7 +239,7 @@
   }
 
   @media screen and (min-width: 767px) {
-    width: 114px;
+    width: 125px;
 
     font-size: 8px;
     line-height: 1.5;
@@ -358,3 +408,23 @@
     right: 155px;
   }
 }
+
+// .chat-button {
+//   position: fixed;
+//   right: 30px;
+//   bottom: 30px;
+
+//   display: inline-block;
+//   width: 64px;
+//   height: 64px;
+
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+
+//   background-image: url(../images/produkct-images/ice-cream.png);
+//   background-size: contain;
+
+//   cursor: pointer;
+// }
