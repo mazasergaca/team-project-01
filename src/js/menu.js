@@ -11,7 +11,8 @@
   refs.menuList.addEventListener("click", closeMenu);
 
   function toggleMenu() {
-    refs.menu.classList.toggle("is-hidden");
+    document.body.classList.toggle("menu-open");
+    refs.menu.classList.toggle("is-hidden");  
   }
 
   function closeMenu() {
