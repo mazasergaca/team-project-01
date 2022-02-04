@@ -7,9 +7,12 @@
 }
 
 .header {
-  background: #ffb8ca;
+  position: absolute;
+  z-index: 15;
+  background: transparent;
   padding-top: 37px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .header-logo {
@@ -32,7 +35,7 @@
   align-items: center;
 }
 
-.header-nav__item+.header-nav__item {
+.header-nav__item + .header-nav__item {
   margin-left: 20px;
 }
 
@@ -42,77 +45,77 @@
   font-size: 16px;
   line-height: 1.31;
 
-  color: #FFFFFF;
+  color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #D41443;
+    color: #d41443;
   }
 }
 
-.header-button {
+.header-container .header-button {
   display: none;
   // margin-left: 110px;
   text-align: center;
   width: 159px;
   height: 44px;
-  
-  background: #FFFFFF;
+
+  background: #ffffff;
   border-radius: 22px;
-  border: #FFFFFF;
+  border: #ffffff;
 
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  
-  color: #D41443;
+
+  color: #d41443;
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background: #ECEBEB;
-    }
-    @media screen and (min-width: 768px) {
-      display: block;
-    }
+    background: #ecebeb;
   }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
 
 .header-buynow-svg {
-    margin-left: 12px;
-  }
+  margin-left: 12px;
+}
 
-  .menu-open-btn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
-    margin-right: 30px;
-    cursor: pointer;
-    fill: black;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.menu-open-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  margin-right: 30px;
+  cursor: pointer;
+  fill: black;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      color: black;
-    }
-    @media screen and (min-width: 1280px) {
-      display: none;
-    }
+  &:hover,
+  &:focus {
+    color: black;
   }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
 
-  .open-menu-icon {
-    fill: currentColor;
-    &:hover,
-    &:focus {
-      color: black;
-    }
+.open-menu-icon {
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: black;
   }
+}
 
 .header-backdrop {
   position: fixed;
@@ -161,54 +164,54 @@
   width: 20px;
   height: 20px;
   padding: 0;
- 
 }
 
-  .header-button-buy {
-     display: block;
-     margin-bottom: 32px;  
-     width: 209px;
-     height: 44px;
-     text-align: center;
+.header-button-buy {
+  width: 209px;
+  height: 44px;
+  text-align: center;
 
-     background: #FFFFFF;
-     border-radius: 22px;
-     border: #FFFFFF;
+  background: #ffffff;
+  border-radius: 22px;
+  border: #ffffff;
 
-     font-family: DM Sans;
-     font-weight: 700;
-     font-size: 16px;
-     line-height: 1.31;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 
-     color: #D41443;
+  color: #d41443;
 
-     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     cursor: pointer;
-     &:hover,
-     &:focus {
-       background: #ECEBEB;
-     }   
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
   }
+}
 
-  .header-menu-nav-item {
-    margin-bottom: 23px;   
+.header-menu-nav-item {
+  margin-bottom: 23px;
+}
+.header-menu-nav-list {
+  margin-top: 32px;
+}
+
+.header-menu-nav-link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.13;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #d41443;
   }
-
-  .header-menu-nav-link {
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.13;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: #D41443;
-    }
-  }
-
-
-
-
+}
+.header-primary-link {
+  color: $main-red-color;
+}
